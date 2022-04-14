@@ -23,5 +23,8 @@
     "jquery": "^3.6.0",
     "sass": "^1.49.11",
     "slick-carousel": "^1.8.1"
+  },
+  "dependencies": {
+    "@fancyapps/fancybox": "^3.5.7"
   }
 }
