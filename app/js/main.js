@@ -6,3 +6,10 @@ $(function(){
     autoplay: true
   });
 });
+
+$(".star").rateYo({
+  starWidth: "17px",
+  normalfill: "#ccccce",
+  ratedFill: "#e74c3c",
+  readOnly:true
+});
