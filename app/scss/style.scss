@@ -187,8 +187,8 @@
 
 //breadcrumbs
 
-.top{
-    &__container{
+.top {
+    &__container {
         max-width: 1700px;
         margin: 0 auto;
         background-repeat: no-repeat;
@@ -682,7 +682,8 @@
         display: flex;
         justify-content: space-between;
         position: relative;
-        &::after{
+
+        &::after {
             content: '';
             position: absolute;
             right: -20px;
@@ -698,6 +699,7 @@
         max-width: 370px;
         border: 1px solid #ececec;
         transition: all .3s;
+
         &:hover {
             box-shadow: 20px 0px 60px 0px rgba(202, 202, 202, 0.35);
             border: none;
@@ -781,29 +783,34 @@
 
 
 //modal
-.modal{
+.modal {
     padding-top: 110px;
     max-width: 570px;
     margin: 0 auto 115px;
-    &__links{
+
+    &__links {
         text-align: center;
         margin-bottom: 40px;
     }
-    &__link{
+
+    &__link {
         color: #909090;
         font-size: 22px;
         @extend%roboto-400;
         text-transform: uppercase;
         margin: 0 30px;
     }
-    &__link--active{
+
+    &__link--active {
         color: $accent;
     }
-    &__label{
+
+    &__label {
         margin-bottom: 30px;
         display: block;
     }
-    &__input{
+
+    &__input {
         display: block;
         width: 100%;
         border: none;
@@ -812,7 +819,8 @@
         height: 60px;
         padding: 0 15px;
     }
-    &__btn{
+
+    &__btn {
         display: block;
         background-color: $title;
         text-transform: uppercase;
@@ -823,17 +831,46 @@
         width: 100%;
         cursor: pointer;
     }
-    &__error{
+
+    &__error {
         margin-top: 12px;
         color: $accent;
         display: inline-block;
     }
-    &__text{
+
+    &__text {
         margin-bottom: 25px;
     }
 }
 
+//404
 
+.page-404 {
+    padding: 110px 0 120px;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__content{
+        max-width: 570px;
+        width: 100%;
+    }
+    &__title{
+        color: #283384;
+        margin-bottom: 20px;
+        @extend %roboto-700;
+        font-size: 48px;
+    }
+    &__text{
+        margin-bottom: 55px;
+        max-width: 470px;
+    }
+    &__link{
+        @extend %btn;
+        padding: 14px 35px;
+    }
+}
 
 
 @import 'media';
